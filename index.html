@@ -1,79 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Lithos Labs - Rock Solid Web Development - Columbus, Ohio</title>
-    <meta name="description" content="Rock Solid Web Development from Columbus, Ohio">
-    <meta name="author" content="Lithos Labs, LLC">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        text-shadow: 1px 1px 1px white;
+        background-color: #F9F9F9;
+        font-family: 'Open Sans', sans-serif;
+        font-size:15px;
+        font-weight: 200;
+        margin:0;
+        padding:0;
+      }
+      a { text-decoration:none; }
+      header {
+        border-top: 5px solid #2f2f2f;
+        color:#2f2f2f;
+        height:100px;
+        line-height:100px;
+      }
+      header h1 {
+        font-weight:700;
+        font-size:36px;
+        margin:0;
+        padding:0;
+      }
+      .logo a { color:black !important; }
+      .logo a:hover { color:#F27C22 !important; }
+      ul.nav {
+        font-weight:700;
+        float:right;
+        margin:0;
+        padding:0;
+      }
+      ul.nav li { display:inline; list-style-type:none; margin-left:40px; }
+      ul.nav a { color:#989898; text-decoration:none; }
+      ul.nav a:hover { color:black; }
+      a.get-in-touch { color:#F27C22 !important; }
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-    <style type="text/css">
-      body { padding-top: 60px; }
-      #header a { color: black; }
-
+      section { overflow:hidden; }
+      .span12 { width:960px; margin:0 auto; }
+      .span6 { float:left; width:440px; margin:0 20px; }
+      .hero {
+        background-image: url(background.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        height:300px;
+      }
+      .create {
+        color: #fff;
+        font-size:48px;
+        height:300px;
+        line-height:300px;
+        text-align:center;
+        text-shadow: 2px 2px 2px black;
+      }
+      .what-we-do{
+        padding:40px 0;
+      }
+      .what-we-do h1 {
+        font-size:28px;
+      }
+      section img.icon { float:left; margin-right:10px; }
+      section h3 { font-weight:400; }
+      footer {
+        background-color:#2F2F2F;
+        color:white;
+        font-size:12px;
+        padding:40px 0;
+        text-align:center;
+        text-shadow:none;
+      }
     </style>
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   </head>
-
   <body>
+    <header>
+    <div class="span12">
+      <ul class="nav">
+        <li><a class="get-in-touch" href="mailto:contact@lithoslabs.com">Contact Us</a></li>
+      </ul>
+      <h1 class="logo"><a href="http://lithoslabs.com">Lithos Labs</a></h1>
+    </div>
+    </header>
 
-    <div class="container">
+    <section class="hero">
+    <div class="span12">
+      <div class="create">Rock solid web development</div>
+    </div>
+    </section>
 
-      <div id="header">
-        <div class="pull-right">
-          <ul class="nav">
-            <li><a href="mailto:contact@lithoslabs.com">Contact</a></li>
-            <!--<li><a href="#">Blog</a></li>-->
-          </ul>
+    <section class="what-we-do">
+    <div class="span12">
+      <div class="span6">
+        <h1><a name="what-we-do">What We Do</a></h1>
+
+        <div>
+          <img class="icon" alt="location" src="glyphicons/png/glyphicons_086_display.png"/>
+          <h3>Web Development</h3>
+          <p>Lithos Labs is a web development company based in the Midwest and focused around building top notch web applications.</p>
         </div>
-        <h1><a href="http://lithoslabs.com">Lithos Labs</a></h1>
+
+        <div>
+          <img class="icon" alt="location" src="glyphicons/png/glyphicons_280_settings.png"/>
+          <h3>Software Maintenance</h3>
+          <p>Like everything, software often needs improvements. We're here to provide updates to your site to keep it running smoothly.</p>
+        </div>
+
+        <div>
+          <img class="icon" alt="location" src="glyphicons/png/glyphicons_341_github.png"/>
+          <h3>Open Source</h3>
+          <p>Contributing to the software community is important, so we make a point to share our knowledge and experience with others.</p>
+        </div>
       </div>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>We're a web development shop in the Midwest.</h1>
-        </br>
-        <p><a href="mailto:contact@lithoslabs.com" class="btn primary large">Interested in hiring Lithos Labs?</a></p>
-      </div>
+      <div class="span6">
+        <h1><a name="what-we-do">Who We Are</a></h1>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span6">
-          <h2>Tourly</h2>
-          <p>Tourly is a tour management system designed to make life easier for both tour coordinators and registrants.  We've automated much of the process, allowing registrants to sign up for tours at their convenience and coordinators to manage tours with ease.</p>
-          <p><a class="btn" href="http://tourly.lithoslabs.com" target="_blank">Sign up &raquo;</a></p>
+        <div>
+          <img class="icon" alt="location" src="glyphicons/png/glyphicons_242_google_maps.png"/>
+          <h3>Located In The Midwest</h3>
+          <p>We provide full service development from our locations in Columbus, Ohio and St. Louis, Missouri.</p>
         </div>
-        <div class="span5">
-          <h2>Event Crab</h2>
-	  <p>Event Crab aims to simplify event coordinating for individuals.  It allows you to create and share events with guests without having to rely on guests all using a single social networking platform.</p>
-          <p><a class="btn" href="#">Coming soon &raquo;</a></p>
-       </div>
-        <div class="span5">
-          <h2>Consulting</h2>
-          <p>We do consulting!  Want an application built?  We can do that for you.  We specialize in web development, but are experienced in a number of languages and platforms.  Contact us for more details.</p>
-          <p><a class="btn" href="mailto:contact@lithoslabs.com">Contact us &raquo;</a></p>
+
+        <div>
+          <img class="icon" alt="location" src="glyphicons/png/glyphicons_043_group.png"/>
+          <h3>Experienced</h3>
+          <p>Our team brings years of practice and sophistication together to build experiences instead of just applications.</p>
+        </div>
+
+        <div>
+          <img class="icon" alt="location" src="glyphicons/png/glyphicons_244_conversation.png"/>
+          <h3>Work With Us</h3>
+          <p>Interestd in hiring us? Have any questions or comments? Send us an email and let's talk! <a class="get-in-touch" href="mailto:contact@lithoslabs.com">contact@lithoslabs.com</a></p>
         </div>
       </div>
 
-      <footer>
-        <!--<p class="pull-right">More Links Here</p>-->
-        <p class="pull-right">&copy; Lithos Labs, LLC 2012</p>
-        </br></br>
-        <p class="pull-right">Columbus, OH</p>
-      </footer>
+    </div>
+    </section>
 
-    </div> <!-- /container -->
+    <footer>
+      <div class="span12">
+        <div>
+          &copy; 2012 Lithos Labs, LLC. All rights reserved.
+        </div>
+    </footer>
 
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28090403-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </body>
 </html>
